@@ -1,7 +1,9 @@
+---
 license: apache-2.0
-title: Summarization using Falcon 7b
+title: Summarize using Falcon
 sdk: streamlit
 emoji: 🚀
 colorFrom: red
 colorTo: green
-short_description: PDF Summarization
+short_description: PDF Summarise
+---
