@@ -7,13 +7,14 @@ import os
 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
-from dotenv import load_dotenv
-load_dotenv()
+#from dotenv import load_dotenv
+#load_dotenv()
 
 # os.environ["HF_TOKEN"] = os.getenv("hugging_write")
 
-api_key = os.getenv("hugging_write")
+#api_key = os.getenv("hugging_write")
 
+api_key = st.sidebar.text_input("Enter your Huggingface API Key",type="password")
 # loader=PyPDFLoader("transformer.pdf")
 # docs=loader.load()
 
