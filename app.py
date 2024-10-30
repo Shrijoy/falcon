@@ -46,7 +46,7 @@ if pdf:
     max_tokens = 1500
     # hf_api_key = os.getenv("hugging_face_token")
     repo_id = "mistralai/Mistral-7B-Instruct-v0.3"
-    llm = HuggingFaceEndpoint(repo_id="tiiuae/falcon-40b",temperature=temperature,token=api_key)
+    llm = HuggingFaceEndpoint(repo_id="tiiuae/falcon-7b-instruct",temperature=temperature,token=api_key)
     prompt = PromptTemplate(input_variables=['text'],template=template)
     final_prompt_template = PromptTemplate(input_variable=['text'], template=final_prompt)
     chain = load_summarize_chain(llm,chain_type="map_reduce", map_prompt=prompt, combine_prompt=final_prompt_template)
